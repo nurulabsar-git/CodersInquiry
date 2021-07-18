@@ -12,6 +12,7 @@ const App = () => {
                     <Home />
                 </Route>
             </Switch>
+            <h1>Nayemul</h1>
         </Router>
     );
 };
