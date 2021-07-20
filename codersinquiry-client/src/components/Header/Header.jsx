@@ -8,6 +8,7 @@ const Header = () => {
         <div className='header'>
             <Navbar />
             <Banner />
+            <h1>Monsur</h1>
         </div>
     );
 };
