@@ -1,6 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
+import Login from '../Login/Login';
 
 const Navbar = () => {
     return (
@@ -21,7 +22,7 @@ const Navbar = () => {
                 <div class='collapse navbar-collapse' id='navbarSupportedContent'>
                     <ul class='navbar-nav ms-auto mb-2 mb-lg-0'>
                         <li class='nav-item'>
-                            <Link class='nav-link active' aria-current='page' href='/login'>
+                            <Link to="/login" class='nav-link active' aria-current='page' href="/login">
                                 Login
                             </Link>
                         </li>
