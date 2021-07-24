@@ -13,6 +13,7 @@ const App = () => {
             <Switch>
                 <Route exact path='/'>
                     {/* <Header /> */}
+                    {/* customNavbar just for testing purpose */}
                     <CustomNavbar></CustomNavbar>
                     <Home />
                 </Route>
