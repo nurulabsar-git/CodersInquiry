@@ -32,7 +32,7 @@ const CustomNavbar = () => {
 
     return (
     <div>
-      <div style={{borderRadius: '5px'}}> <button onClick={openModal} style={{borderRadius: '8px'}} ><i style={{ width: '50px'}} className="fa fa-align-justify" aria-hidden="true"></i></button></div>
+      <div style={{borderRadius: '5px', padding: '5px'}}> <button onClick={openModal} style={{borderRadius: '8px'}} ><i style={{ width: '50px'}} className="fa fa-align-justify" aria-hidden="true"></i></button></div>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
@@ -44,24 +44,24 @@ const CustomNavbar = () => {
        </div>
         <div style={{marginTop: '50px'}}>
         <form>
-          <Link to="/" className="text-decorations">
+          <Link to="/courses" className="text-decorations">
           <li className="common-feature">Courses</li>
           </Link>
-          <Link to="/myProject" className="text-decorations">
+          <Link to="/playground" className="text-decorations">
           <li className="common-feature">Code Playground</li>
           </Link>
-          <Link to="/myProject" className="text-decorations">
+          <Link to="/discuss" className="text-decorations">
           <li className="common-feature">Discuss</li>
           </Link>
-          <Link to="/myProject" className="text-decorations">
+          <Link to="/blog" className="text-decorations">
           <li className="common-feature">Blog</li>
           </Link>
-          <Link to="/blogs" className="text-decorations">
+          <Link to="/getPro" className="text-decorations">
           <li className="common-feature">Get Pro</li>
           </Link>
           <Link to="/login" className="text-decorations" style={{display: 'flex', justifyContent: 'space-around'}}>
           <li  className="common-feature">LogIn</li>
-          <li  className="common-feature">LogIn</li>
+          <li  className="common-feature">Register</li>
           </Link>
         </form>
         </div>
