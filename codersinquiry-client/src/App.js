@@ -12,9 +12,9 @@ const App = () => {
         <Router>
             <Switch>
                 <Route exact path='/'>
-                    {/* <Header /> */}
+                    <Header />
                     {/* customNavbar just for testing purpose */}
-                    <CustomNavbar></CustomNavbar>
+                    {/* <CustomNavbar></CustomNavbar> */}
                     <Home />
                 </Route>
                 <Route path="/login">
