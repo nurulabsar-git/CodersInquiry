@@ -6,6 +6,7 @@ import Header from './components/Header/Header';
 import Login from './components/Login/Login';
 import Navbar from './components/Navbar/Navbar';
 import CustomNavbar from './components/CustomNavbar/CustomNavbar';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
     return (
@@ -16,6 +17,7 @@ const App = () => {
                     {/* customNavbar just for testing purpose */}
                     {/* <CustomNavbar></CustomNavbar> */}
                     <Home />
+                    <Footer />
                 </Route>
                 <Route path="/login">
                     <Navbar />

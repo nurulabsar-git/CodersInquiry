@@ -16,8 +16,8 @@ const MainComponent = () => {
                         <p>Answers</p>
                     </div>
                 </div>
-                <div className="col-md-10">
-                    <Link to="/"><p className="questions_title">can anyone please help me with this solving this code with javascript.</p></Link>
+                <div className="col-md-10 mx-2">
+                    <Link to="/"><p className="questions_title">can anyone please help me with this solving this code with javascript. sample code suggest please!!</p></Link>
                     <Link><span className="tag_name">javascript</span><span className="tag_name">react</span></Link>
                 </div>
             </div>
