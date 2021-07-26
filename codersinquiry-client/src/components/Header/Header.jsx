@@ -5,7 +5,7 @@ import Banner from '../Banner/Banner';
 import CustomNavbar from '../CustomNavbar/CustomNavbar'
 const Header = () => {
     var style = {
-        width: '300px'
+        maxWidth: '300px'
     } 
     return (
         <div className='header'>
