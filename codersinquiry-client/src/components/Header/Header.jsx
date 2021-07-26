@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css';
 import Navbar from '../Navbar/Navbar';
 import Banner from '../Banner/Banner';
 import CustomNavbar from '../CustomNavbar/CustomNavbar'
 const Header = () => {
-    var style = {
-        maxWidth: '300px'
-    } 
+    // const [styles, setStyles] = useState(
+    //     {maxWidth: '200px'}
+    // );
+    // var style = {
+    //     maxWidth: '300px'
+    // } 
     return (
         <div className='header'>
-               { style ? <CustomNavbar/> :<Navbar/> }
+            <Navbar/> 
             <Banner />
         </div>
     );

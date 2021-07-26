@@ -31,6 +31,11 @@ const Navbar = () => {
                                 Register
                             </Link>
                         </li>
+                        <li class='nav-item'>
+                            <Link to="/courses" class='nav-link' href='/courses'>
+                                Courses
+                            </Link>
+                        </li>
                     </ul>
                 </div>
             </div>

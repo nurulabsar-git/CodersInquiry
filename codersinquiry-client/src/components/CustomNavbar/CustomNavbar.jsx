@@ -8,7 +8,7 @@ const customStyles = {
     left: '155px',
     right: 'auto',
     width: '310px',
-    height: '100vh' ,
+    height: '80vh' ,
     boxShadow: '6px 6px 12px gray',
     borderRadius: '8px',
     bottom: 'auto',

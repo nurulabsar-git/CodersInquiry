@@ -6,6 +6,7 @@ import Header from './components/Header/Header';
 import Login from './components/Login/Login';
 import Navbar from './components/Navbar/Navbar';
 import CustomNavbar from './components/CustomNavbar/CustomNavbar';
+import Courses from './components/Courses/Courses';
 
 const App = () => {
     return (
@@ -20,6 +21,9 @@ const App = () => {
                 <Route path="/login">
                     <Navbar />
                     <Login />
+                </Route>
+                <Route path="/courses">
+                    <Courses/>
                 </Route>
             </Switch>
         </Router>
