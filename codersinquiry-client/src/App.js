@@ -10,6 +10,7 @@ import Footer from './components/Footer/Footer';
 import RegistrationForm from './components/Login/RegistrationForm';
 import Courses from './components/Courses/Courses';
 import Blog from './components/Blog/Blog';
+import TopLearners from './components/TopLearners/TopLearners';
 
 const App = () => {
     return (
@@ -36,6 +37,9 @@ const App = () => {
                 </Route>
                 <Route path="/blogs">
                     <Blog/>
+                </Route>
+                <Route path="/topLearners">
+                   <TopLearners/>
                 </Route>
             </Switch>
         </Router>
