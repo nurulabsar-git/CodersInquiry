@@ -21,7 +21,7 @@ const Blog = () => {
 
     return (
         <Container>
-            This is blogging section
+            This is blogging section..
             <div style={styles}>
              {   blogData.map((datum) => ( 
                
