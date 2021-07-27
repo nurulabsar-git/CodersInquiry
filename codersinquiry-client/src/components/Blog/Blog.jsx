@@ -11,7 +11,7 @@ const blogData = [
         logo: logo,
        },
        {
-        title: 'What is a cors policy?',
+        title: 'What is a cors policy? Cors policy..',
         logo: logo,
        },
 
