@@ -7,6 +7,8 @@ import Login from './components/Login/Login';
 import Navbar from './components/Navbar/Navbar';
 import CustomNavbar from './components/CustomNavbar/CustomNavbar';
 import Courses from './components/Courses/Courses';
+import TopLearners from './components/TopLearners/TopLearners';
+import Blog from './components/Blog/Blog';
 
 const App = () => {
     return (
@@ -24,6 +26,12 @@ const App = () => {
                 </Route>
                 <Route path="/courses">
                     <Courses/>
+                </Route>
+                <Route path="/topLearner">
+                    <TopLearners/>
+                </Route>
+                <Route path="/blogs">
+                    <Blog/>
                 </Route>
             </Switch>
         </Router>

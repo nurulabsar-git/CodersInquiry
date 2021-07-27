@@ -57,7 +57,7 @@ const coursesData = [
 const Courses = () => {
     console.log(coursesData);
 
-    const styles ={display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', padding: '10px'}
+   const styles ={display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', padding: '10px'}
     const cardStyle = {boxShadow: 'rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset', justifyContent: 'space-around',  border: '1.8px solid #dce2e5', borderRadius: '4px', textAlign: 'center', height: '196px', width: '174px', marginBottom: '10px', padding: '10px'}
     return (
         <Container>
