@@ -17,13 +17,13 @@ import CourseDetails from './components/Courses/CourseDetails';
 const App = () => {
     return (
         <Router>
+            <CustomNavbar/>
             <Switch>
                 <Route exact path='/'>
                     <Header />
                     {/* customNavbar just for testing purpose */}
-                    {/* <CustomNavbar></CustomNavbar> */}
+                    
                     <Home />
-                    <Footer />
                 </Route>
                 <Route path="/login">
                     <Navbar />
@@ -38,18 +38,23 @@ const App = () => {
                     <RegistrationForm />
                 </Route>
                 <Route path="/courses">
+                    <Navbar />
                     <Courses />
                 </Route>
                 <Route path="/courseDetails/:courseId">
+                <Navbar />
                  <CourseDetails/>
                 </Route>
                 <Route path="/blogs">
+                  <Navbar />
                     <Blog />
                 </Route>
                 <Route path="/topLearners">
+                    <Navbar />
                     <TopLearners />
                 </Route>
             </Switch>
+            <Footer />
         </Router>
     );
 };
