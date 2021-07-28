@@ -17,11 +17,12 @@ import CourseDetails from './components/Courses/CourseDetails';
 const App = () => {
     return (
         <Router>
+            <CustomNavbar/>
             <Switch>
                 <Route exact path='/'>
                     <Header />
                     {/* customNavbar just for testing purpose */}
-                    {/* <CustomNavbar></CustomNavbar> */}
+                    
                     <Home />
                     <Footer />
                 </Route>
