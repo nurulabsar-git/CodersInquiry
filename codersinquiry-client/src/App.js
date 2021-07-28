@@ -12,6 +12,7 @@ import Courses from './components/Courses/Courses';
 import Blog from './components/Blog/Blog';
 import TopLearners from './components/TopLearners/TopLearners';
 import AskQuestions from './components/AskQuestion/AskQuestions';
+import CourseDetails from './components/Courses/CourseDetails';
 
 const App = () => {
     return (
@@ -37,6 +38,9 @@ const App = () => {
                 </Route>
                 <Route path="/courses">
                     <Courses />
+                </Route>
+                <Route path="/courseDetails/:courseId">
+                 <CourseDetails/>
                 </Route>
                 <Route path="/blogs">
                     <Blog />
