@@ -10,8 +10,9 @@ const CourseDetails = () => {
        padding: '50px',
     }
     return (
-        <Container>
-          <h4 style={style}>This is course {courseId} details page</h4>  
+        <Container style={style}>
+          <h4>This is course {courseId} details page</h4> 
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/pKO9UjSeLew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </Container>
     );
 };
