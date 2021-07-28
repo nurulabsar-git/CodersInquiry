@@ -67,6 +67,7 @@ const Login = () => {
             <Link to="/register">Have no account?<span style= {{color:"red"}}>register now</span></Link>
         </MainContainer>
     );
+    
 };
 
 export default Login;
