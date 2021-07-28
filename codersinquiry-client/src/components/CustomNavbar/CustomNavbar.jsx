@@ -47,14 +47,14 @@ const CustomNavbar = () => {
           <Link to="/courses" className="text-decorations">
           <li className="common-feature">Courses</li>
           </Link>
+          <Link to="/blog" className="text-decorations">
+          <li className="common-feature">Blog</li>
+          </Link>
           <Link to="/playground" className="text-decorations">
           <li className="common-feature">Code Playground</li>
           </Link>
           <Link to="/discuss" className="text-decorations">
           <li className="common-feature">Discuss</li>
-          </Link>
-          <Link to="/blog" className="text-decorations">
-          <li className="common-feature">Blog</li>
           </Link>
           <Link to="/getPro" className="text-decorations">
           <li className="common-feature">Get Pro</li>

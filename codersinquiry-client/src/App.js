@@ -38,15 +38,19 @@ const App = () => {
                     <RegistrationForm />
                 </Route>
                 <Route path="/courses">
+                    <Navbar />
                     <Courses />
                 </Route>
                 <Route path="/courseDetails/:courseId">
+                <Navbar />
                  <CourseDetails/>
                 </Route>
                 <Route path="/blogs">
+                  <Navbar />
                     <Blog />
                 </Route>
                 <Route path="/topLearners">
+                    <Navbar />
                     <TopLearners />
                 </Route>
             </Switch>
