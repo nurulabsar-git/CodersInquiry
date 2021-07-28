@@ -7,13 +7,10 @@
 .tab{
     
     border-right: 2px solid #ddd;
-    padding: 10px;
+    padding: 5px;
 }
 
-.tab::after{
-    border-top: 2px solid #ddd;
-    color: gray;
-}
+
 ul{
     display: block;
     list-style-type: disc;
