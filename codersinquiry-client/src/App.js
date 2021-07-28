@@ -24,7 +24,6 @@ const App = () => {
                     {/* customNavbar just for testing purpose */}
                     
                     <Home />
-                    <Footer />
                 </Route>
                 <Route path="/login">
                     <Navbar />
@@ -51,6 +50,7 @@ const App = () => {
                     <TopLearners />
                 </Route>
             </Switch>
+            <Footer />
         </Router>
     );
 };
