@@ -1,7 +1,10 @@
 import React from 'react';
 import js from '../../images/js.png'
 import python from '../../images/python.png'
-import C from '../../images/c.png'
+import C from '../../images/c.png';
+import react_js from '../../images/react.png';
+import html from '../../images/html.png';
+import java from '../../images/java.png';
 import { Container } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
 import './Courses.css'
@@ -16,27 +19,27 @@ const coursesData = [
         logo: python,
     },
     {   id: 2,
-        courseName: 'C++',
-        logo: C,
+        courseName: 'React js',
+        logo: react_js,
     },
     {   id: 3,
-        courseName: 'JavaScript',
-        logo: js,
+        courseName: 'C++',
+        logo: C,
        },
        {   id: 4,
-           courseName: 'Python',
-           logo: python,
+           courseName: 'Java',
+           logo: java,
        },
        {   id: 5,
-           courseName: 'C++',
-           logo: C,
+           courseName: 'HTML',
+           logo: html,
        },
        { id: 6,
-        courseName: 'JavaScript',
+        courseName: 'JavaScript Core',
         logo: js,
        },
        {   id: 7,
-           courseName: 'Python',
+           courseName: 'Python Core',
            logo: python,
        },
        {   id: 8,
