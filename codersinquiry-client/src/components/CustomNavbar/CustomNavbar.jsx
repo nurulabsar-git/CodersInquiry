@@ -32,7 +32,7 @@ const CustomNavbar = () => {
 
     return (
     <div>
-      <div style={{borderRadius: '5px', padding: '5px'}}> <button onClick={openModal} style={{borderRadius: '8px'}} ><i style={{ width: '50px'}} className="fa fa-align-justify" aria-hidden="true"></i></button></div>
+      <div className="custom-navbar-container" style={{borderRadius: '5px', padding: '5px'}}> <button onClick={openModal} style={{borderRadius: '8px'}} ><i style={{ width: '50px'}} className="fa fa-align-justify" aria-hidden="true"></i></button></div>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
@@ -47,14 +47,14 @@ const CustomNavbar = () => {
           <Link to="/courses" className="text-decorations">
           <li className="common-feature">Courses</li>
           </Link>
+          <Link to="/blog" className="text-decorations">
+          <li className="common-feature">Blog</li>
+          </Link>
           <Link to="/playground" className="text-decorations">
           <li className="common-feature">Code Playground</li>
           </Link>
           <Link to="/discuss" className="text-decorations">
           <li className="common-feature">Discuss</li>
-          </Link>
-          <Link to="/blog" className="text-decorations">
-          <li className="common-feature">Blog</li>
           </Link>
           <Link to="/getPro" className="text-decorations">
           <li className="common-feature">Get Pro</li>
