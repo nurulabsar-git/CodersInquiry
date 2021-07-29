@@ -47,7 +47,7 @@ const CustomNavbar = () => {
           <Link to="/courses" className="text-decorations">
           <li className="common-feature">Courses</li>
           </Link>
-          <Link to="/blog" className="text-decorations">
+          <Link to="/blogs" className="text-decorations">
           <li className="common-feature">Blog</li>
           </Link>
           <Link to="/playground" className="text-decorations">

@@ -22,7 +22,6 @@ const App = () => {
                 <Route exact path='/'>
                     <Header />
                     {/* customNavbar just for testing purpose */}
-                    
                     <Home />
                 </Route>
                 <Route path="/login">
