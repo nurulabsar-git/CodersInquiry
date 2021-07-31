@@ -5,4 +5,11 @@
     padding: 20px;
     border-radius: 5px;
     box-shadow: 2px 3px 5px gray;
+    height: fit-content;
+    margin-top: auto;
+}
+
+.form_container img { 
+    vertical-align: middle;
+    width: 40%;
 }
