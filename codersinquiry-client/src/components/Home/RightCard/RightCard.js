@@ -1,16 +1,17 @@
-import React from 'react'
-import HotTopics from './HotTopics'
+import React from 'react';
 import './RightCard.css';
+import HotTopics from './HotTopics';
+
 const RightCard = () => {
     return (
-        <div className="right_card">
-            <h1>Hot Topics</h1>
+        <div className='rightCard mt-3'>
+            <h2>Hot Topics</h2>
             <HotTopics />
             <HotTopics />
             <HotTopics />
             <HotTopics />
         </div>
-    )
-}
+    );
+};
 
-export default RightCard
+export default RightCard;

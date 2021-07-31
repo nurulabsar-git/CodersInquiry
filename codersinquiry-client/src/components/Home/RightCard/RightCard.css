@@ -1,10 +1,10 @@
-.right_card{
-    margin-left: 20px;
-    border-radius: 5px;
+.rightCard{
+    border-radius: 12px;
     padding: 10px;
     background-color: white;
-    box-shadow: 1px 1px 10px gray;
+    /* box-shadow: 1px 1px 10px gray; */
 }
+
 .hotTopic_icon{
     margin-right: 10px;
     color: gray;

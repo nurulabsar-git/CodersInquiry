@@ -17,38 +17,37 @@ import CourseDetails from './components/Courses/CourseDetails';
 const App = () => {
     return (
         <Router>
-            <CustomNavbar/>
+            <CustomNavbar />
             <Switch>
                 <Route exact path='/'>
-                    <Header />
                     {/* customNavbar just for testing purpose */}
                     <Home />
                 </Route>
-                <Route path="/login">
+                <Route path='/login'>
                     <Navbar />
                     <Login />
                     {/* <RegistrationForm /> */}
                 </Route>
-                <Route path="/askQuestion">
+                <Route path='/askQuestion'>
                     <AskQuestions />
                 </Route>
-                <Route path="/register">
+                <Route path='/register'>
                     <Navbar />
                     <RegistrationForm />
                 </Route>
-                <Route path="/courses">
+                <Route path='/courses'>
                     <Navbar />
                     <Courses />
                 </Route>
-                <Route path="/courseDetails/:courseId">
-                <Navbar />
-                 <CourseDetails/>
+                <Route path='/courseDetails/:courseId'>
+                    <Navbar />
+                    <CourseDetails />
                 </Route>
-                <Route path="/blogs">
-                  <Navbar />
+                <Route path='/blogs'>
+                    <Navbar />
                     <Blog />
                 </Route>
-                <Route path="/topLearners">
+                <Route path='/topLearners'>
                     <Navbar />
                     <TopLearners />
                 </Route>

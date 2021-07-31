@@ -1,7 +1,7 @@
 import React from 'react';
+import './AskQuestions.css';
 import { useForm } from 'react-hook-form';
 import Navbar from '../Navbar/Navbar';
-import './AskQuestions.css';
 
 const AskQuestions = () => {
 
