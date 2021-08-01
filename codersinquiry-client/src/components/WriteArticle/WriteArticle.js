@@ -30,8 +30,8 @@ const WriteArticle = () => {
                     <input type="file" className="form-control mb-3 mt-3" />
 
                     <input className="btn btn-warning text-black py-2 px-3" type="submit" value="সাবমিট করুন" />
-                </form>
-                <img src={WriteArticleImage} alt="WriteArticleImage" />
+                </form> 
+                <img src={WriteArticleImage} alt="WriteArticleImage" /> 
             </div>
             <Footer />
         </div>
