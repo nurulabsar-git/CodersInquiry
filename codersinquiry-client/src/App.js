@@ -6,13 +6,13 @@ import Header from './components/Header/Header';
 import Login from './components/Login/Login';
 import Navbar from './components/Navbar/Navbar';
 import CustomNavbar from './components/CustomNavbar/CustomNavbar';
-import Footer from './components/Footer/Footer';
 import RegistrationForm from './components/Login/RegistrationForm';
 import Courses from './components/Courses/Courses';
 import Blog from './components/Blog/Blog';
 import TopLearners from './components/TopLearners/TopLearners';
 import AskQuestions from './components/AskQuestion/AskQuestions';
 import CourseDetails from './components/Courses/CourseDetails';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
     return (

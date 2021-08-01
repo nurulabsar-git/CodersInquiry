@@ -14,9 +14,9 @@ const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
 const QAPieChart = () => {
     return (
         <div className='qaPieChart'>
-            <PieChart width={325} height={325} align='center' className='qaPieChart__chart'>
-                <Pie data={data01} cx='50%' cy='50%' outerRadius={100} fill='#8884d8' label>
-                    {data01.map((entry, index) => (
+            <PieChart width={245} height={245} align='center' className='qaPieChart__chart'>
+                <Pie data={data01} cx='50%' cy='50%' outerRadius={75} fill='#8884d8' >
+                    {data01.map((_, index) => (
                         <Cell fill={COLORS[index % COLORS.length]} />
                     ))}
                 </Pie>

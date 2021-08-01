@@ -1,8 +1,9 @@
 .question {
     margin: 5px;
     padding: 5px;
-    border-radius: 8px;
-    background-color: #e5e5e5;
+    /* border-radius: 8px; */
+    /* background-color: #e5e5e5; */
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .question__col:nth-of-type(1) .question__card {
