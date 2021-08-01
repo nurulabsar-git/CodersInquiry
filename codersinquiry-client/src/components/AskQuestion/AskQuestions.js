@@ -1,7 +1,9 @@
 import React from 'react';
-import './AskQuestions.css';
 import { useForm } from 'react-hook-form';
+import Footer from '../Footer/Footer';
 import Navbar from '../Navbar/Navbar';
+import thinker from '../../images/thinker.png';
+import './AskQuestions.css';
 
 const AskQuestions = () => {
     const {

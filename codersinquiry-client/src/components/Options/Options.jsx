@@ -26,12 +26,14 @@ const Options = () => {
                     </Link>
                 </div>
                 <div className='col-md-4'>
-                    <div className='options__card card'>
-                        <h1>
-                            আর্টিকেল <br /> লিখুন
-                        </h1>
-                        <BsPencilSquare className='options__cardIcon' />
-                    </div>
+                    <Link to='/writeArticle'>
+                        <div className='options__card card'>
+                            <h1>
+                                আর্টিকেল <br /> লিখুন
+                            </h1>
+                            <BsPencilSquare className='options__cardIcon' />
+                        </div>
+                    </Link>
                 </div>
             </div>
         </div>

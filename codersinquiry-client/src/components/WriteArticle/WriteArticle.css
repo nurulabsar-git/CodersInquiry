@@ -1,4 +1,4 @@
-.form {
+.form{
     font-size: large;
     background-color: rgba(67, 97, 238, 1);
     margin: 5rem;
@@ -9,17 +9,12 @@
     margin-top: auto;
 }
 
-.form p {
-    margin-top: 5px;
-    color: white;
-}
-
-.form_section {
-    width: 100%;
+.form_container {
     height: 100%;
+    width: 100%;
 }
 
-.form_section img { 
+.form_container img { 
     vertical-align: middle;
-    width: 30%;
+    width: 40%;
 }
