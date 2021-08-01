@@ -37,6 +37,7 @@ const AskQuestions = () => {
             <Footer />
         </div>
     );
+    
 };
 
 export default AskQuestions;
