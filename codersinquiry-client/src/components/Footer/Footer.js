@@ -65,7 +65,7 @@ const Footer = () => {
                             </li>
                             <li>
                                 <a href='#' className='footer__colListItem'>
-                                    Monsur Alam
+                                    Monsur Alam Rana
                                 </a>
                             </li>
                             <li>

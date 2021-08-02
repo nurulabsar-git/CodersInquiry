@@ -1,6 +1,6 @@
 import React from 'react';
 import './QAPieChart.css';
-import { PieChart, Pie, Sector, Cell, Legend, Tooltip, ResponsiveContainer } from 'recharts';
+import { PieChart, Pie, Cell, Legend, Tooltip, } from 'recharts';
 
 const data01 = [
     { name: 'Questions', value: 142 },

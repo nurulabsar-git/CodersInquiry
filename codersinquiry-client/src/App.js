@@ -1,8 +1,7 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
-import Header from './components/Header/Header';
 import Login from './components/Login/Login';
 import Navbar from './components/Navbar/Navbar';
 import CustomNavbar from './components/CustomNavbar/CustomNavbar';
@@ -14,6 +13,7 @@ import AskQuestions from './components/AskQuestion/AskQuestions';
 import CourseDetails from './components/Courses/CourseDetails';
 import Footer from './components/Footer/Footer';
 import WriteArticle from './components/WriteArticle/WriteArticle';
+import QuestionDetail from './components/QuestionDetail/QuestionDetail';
 
 const App = () => {
     return (
@@ -32,6 +32,11 @@ const App = () => {
                 </Route>
                 <Route path='/askQuestion'>
                     <AskQuestions />
+                </Route>
+                <Route path='/questionDetail'>
+                    <Navbar />
+                    <QuestionDetail />
+                    <Footer />
                 </Route>
                 <Route path='/writeArticle'>
                     <WriteArticle />
