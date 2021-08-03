@@ -14,6 +14,7 @@ import CourseDetails from './components/Courses/CourseDetails';
 import Footer from './components/Footer/Footer';
 import WriteArticle from './components/WriteArticle/WriteArticle';
 import QuestionDetail from './components/QuestionDetail/QuestionDetail';
+import Article from './components/Article/Article';
 
 const App = () => {
     return (
@@ -38,8 +39,8 @@ const App = () => {
                     <QuestionDetail />
                     <Footer />
                 </Route>
-                <Route path='/writeArticle'>
-                    <WriteArticle />
+                <Route path='/Article'>
+                    <Article />
                 </Route>
                 <Route path='/register'>
                     <Navbar />
