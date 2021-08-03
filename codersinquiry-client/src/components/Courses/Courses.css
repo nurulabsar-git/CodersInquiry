@@ -25,3 +25,11 @@
     }
 
   }
+
+  .index-div{
+ 
+    overflow-y: scroll;
+    border-left: 1px solid red;
+    opacity: 1 !important;
+    
+  }
