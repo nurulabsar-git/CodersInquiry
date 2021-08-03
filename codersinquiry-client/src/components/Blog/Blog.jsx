@@ -29,7 +29,8 @@ const Blog = () => {
                         <img src={datum.logo} alt='' style={{ width: '150px' }} />
                     </div>
                 ))}
-            </div>
+                
+            </div>            
         </Container>
     );
 };
