@@ -27,14 +27,14 @@ const WriteArticle = () => {
                                 <label for='writeArticleTitle' className='form-label'>
                                     শিরোনাম
                                 </label>
-                                <input type='text' className='form-control' id='writeArticleTitle' placeholder='প্রশ্ন/সমস্যার শিরোনাম লিখুন...' {...register('title', { required: true })} />
+                                <input type='text' className='form-control' id='writeArticleTitle' placeholder='প্রবন্ধের শিরোনাম লিখুন...' {...register('title', { required: true })} />
                                 {errors.title && <span className='text-danger'>প্রবন্ধের শিরোনাম আবশ্যক</span>}
                             </div>
                             <div className='mb-3'>
                                 <label for='writeArticleDescription' className='form-label'>
                                     বিস্তারিত
                                 </label>
-                                <textarea className='form-control' id='writeArticleDescription' rows='3' placeholder='প্রশ্ন/সমস্যার বিস্তারিত লিখুন...' {...register('description', { required: true })}></textarea>
+                                <textarea className='form-control' id='writeArticleDescription' rows='3' placeholder='প্রবন্ধ লিখুন...' {...register('description', { required: true })}></textarea>
                                 {errors.description && <span className='text-danger'>প্রবন্ধের বিস্তারিত অংশ আবশ্যক</span>}
                             </div>
                             <div class='mb-3'>
@@ -47,7 +47,7 @@ const WriteArticle = () => {
                                 <label for='writeArticleTags' className='form-label'>
                                     ট্যাগ
                                 </label>
-                                <input type='text' className='form-control' id='writeArticleTags' placeholder='প্রশ্ন/সমস্যার ট্যাগ যুক্ত করুন...' {...register('tags', { required: true })} />
+                                <input type='text' className='form-control' id='writeArticleTags' placeholder='প্রবন্ধের ট্যাগ যুক্ত করুন...' {...register('tags', { required: true })} />
                                 {errors.tags && <span className='text-danger'>প্রবন্ধের ট্যাগ যুক্ত করা আবশ্যক</span>}
                             </div>
                             <button type="submit" class="btn writeArticle__btn">Publish your Article</button>
