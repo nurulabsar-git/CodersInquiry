@@ -75,6 +75,7 @@ const RegistrationForm = () => {
             });
         } catch (err) {
             setError(true);
+            console.log(error)
         }
         setValues(data);
         history.push('/login');
