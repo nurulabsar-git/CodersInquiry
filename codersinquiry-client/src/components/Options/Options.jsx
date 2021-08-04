@@ -18,7 +18,7 @@ const Options = () => {
                     </Link>
                 </div>
                 <div className='col-md-4'>
-                    <Link to='/askQuestion' className='options__card card my-2'>
+                    <Link to='/askQuestion'>
                         <div>
                             <h1>
                                 প্রশ্ন <br /> করুন
@@ -28,7 +28,7 @@ const Options = () => {
                     </Link>
                 </div>
                 <div className='col-md-4'>
-                    <Link to='/writeArticle' className='options__card card my-2'>
+                    <Link to='/Article' className='options__card card my-2'>
                         <div>
                             <h1>
                                 আর্টিকেল <br /> লিখুন
