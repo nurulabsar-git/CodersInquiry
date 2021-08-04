@@ -12,7 +12,7 @@ import TopLearners from './components/TopLearners/TopLearners';
 import AskQuestions from './components/AskQuestion/AskQuestions';
 import CourseDetails from './components/Courses/CourseDetails';
 import Footer from './components/Footer/Footer';
-import WriteArticle from './components/WriteArticle/WriteArticle';
+// import WriteArticle from './components/WriteArticle/WriteArticle';
 import QuestionDetail from './components/QuestionDetail/QuestionDetail';
 import Article from './components/Article/Article';
 
@@ -40,7 +40,9 @@ const App = () => {
                     <Footer />
                 </Route>
                 <Route path='/Article'>
+                    <Navbar />
                     <Article />
+                    <Footer />
                 </Route>
                 <Route path='/register'>
                     <Navbar />

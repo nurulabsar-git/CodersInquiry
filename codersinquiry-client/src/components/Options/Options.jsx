@@ -26,7 +26,7 @@ const Options = () => {
                     </Link>
                 </div>
                 <div className='col-md-4'>
-                    <Link to='/writeArticle'>
+                    <Link to='/Article'>
                         <div className='options__card card'>
                             <h1>
                                 আর্টিকেল <br /> লিখুন
