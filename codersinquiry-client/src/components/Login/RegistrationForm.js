@@ -11,7 +11,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from 'yup';
 import { useHistory } from 'react-router-dom';
 import { parsePhoneNumberFromString } from 'libphonenumber-js'
-import axios from 'axios';
+// import axios from 'axios';
 const schema = yup.object().shape({
     firstName: yup
         .string()
@@ -32,14 +32,14 @@ const schema = yup.object().shape({
             /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/,
             "Must Contain 8 Characters, One Uppercase, One Lowercase, One Number and one special case Character"
         ),
-    
+
 });
-const normalizePhoneNumber =(value)=>{
-    const phoneNumber  = parsePhoneNumberFromString(value)
-    if(!phoneNumber){
+const normalizePhoneNumber = (value) => {
+    const phoneNumber = parsePhoneNumberFromString(value)
+    if (!phoneNumber) {
         return value
     }
-    return(
+    return (
         phoneNumber.formatInternational()
     )
 }
@@ -47,9 +47,9 @@ const RegistrationForm = () => {
     const [data, setValues] = useState({});
     const [error, setError] = useState(false);
     const history = useHistory();
-    const {register, handleSubmit, watch, formState:{ errors }} = useForm({
+    const { register, handleSubmit, watch, formState: { errors } } = useForm({
         defaultValues: {
-            firstName: data.firstName, 
+            firstName: data.firstName,
             lastName: data.lastName,
             email: data.email,
             hasPhone: data.hasPhone,
@@ -60,25 +60,26 @@ const RegistrationForm = () => {
         resolver: yupResolver(schema),
     });
     const hasPhone = watch("hasPhone", false);
-    const onSubmit = async(data, e)=>{
-        e.preventDefault(); 
+    const onSubmit = async (data, e) => {
+        e.preventDefault();
         setError(false);
-        const user ={
+        const user = {
             ...data
         }
-        try{
-          fetch('http://localhost:5000/users',{
-            method:"POST",
-            headers: { 
-                "Content-Type": "application/json" 
-            },
-            body: JSON.stringify(user)
+        try {
+            fetch('http://localhost:5000/users', {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(user)
             })
-            .then(res =>{
-                console.log(res)
-            })
-        }catch(err){
+                .then(res => {
+                    console.log(res)
+                })
+        } catch (err) {
             setError(true);
+            console.log(error)
         }
         setValues(data);
         history.push("/login");
@@ -88,59 +89,59 @@ const RegistrationForm = () => {
         <MainContainer className="login_container">
             <Typography>Register Now</Typography>
             <Form onSubmit={handleSubmit(onSubmit)} >
-                <Input 
+                <Input
                     {...register("firstName")}
                     type="text"
-                    label="First Name" 
+                    label="First Name"
                     name="firstName"
-                    error = {!!errors.firstName}
-                    helperText =  {errors?.firstName?.message}
+                    error={!!errors.firstName}
+                    helperText={errors?.firstName?.message}
                 />
-                <Input 
+                <Input
                     {...register("lastName")}
                     type="text"
-                    label="Last Name" 
+                    label="Last Name"
                     name="lastName"
-                    error = {!!errors.lastName}
-                    helperText =  {errors?.lastName?.message} 
+                    error={!!errors.lastName}
+                    helperText={errors?.lastName?.message}
                 />
-                <Input 
+                <Input
                     {...register("email")}
                     type="text"
-                    label="Email" 
+                    label="Email"
                     name="email"
                     error={!!errors.email}
                     helperText={errors?.email?.message}
                     required
                 />
-                <FormControlLabel 
+                <FormControlLabel
                     control={
-                        <input type="checkbox" defaultValue={data.hasPhone} defaultChecked={data.hasPhone} {...register("hasPhone")} color="primary"  name="hasPhone"/>
+                        <input type="checkbox" defaultValue={data.hasPhone} defaultChecked={data.hasPhone} {...register("hasPhone")} color="primary" name="hasPhone" />
                     }
                     label="Do you have a Phone?"
                 />
-                 {
-                     hasPhone &&(
-                         <Input 
+                {
+                    hasPhone && (
+                        <Input
                             {...register("phoneNumber")}
                             type="tel"
-                            label="Phone Number" 
+                            label="Phone Number"
                             name="phoneNumber"
-                            onChange={(event)=>{
+                            onChange={(event) => {
                                 event.target.value = normalizePhoneNumber(event.target.value)
                             }}
-                         />
-                     )
-                 }  
-                 <Input 
+                        />
+                    )
+                }
+                <Input
                     {...register("password")}
                     type="text"
-                    label="Password" 
+                    label="Password"
                     name="password"
                     error={!!errors.password}
                     helperText={errors?.password?.message}
                     required
-                /> 
+                />
                 <PrimaryButton>Register</PrimaryButton>
             </Form>
         </MainContainer>

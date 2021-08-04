@@ -39,6 +39,9 @@ const App = () => {
                     <QuestionDetail />
                     <Footer />
                 </Route>
+                <Route path='/writeArticle'>
+                    <WriteArticle />
+                </Route>
                 <Route path='/Article'>
                     <Article />
                 </Route>

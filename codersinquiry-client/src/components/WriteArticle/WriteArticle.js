@@ -22,9 +22,9 @@ const WriteArticle = () => {
                     {errors.title && errors.title.type === "required" && <span style={{ color: "coral" }}>টাইটেল আবশ্যক</span>}
 
 
-                    <textarea className="form-control mb-1 mt-3" placeholder="আর্টিকেলের মেইন অংশ লিখুন..." {...register("description", { required: true })} />
+                    <textarea className="form-control mb-1 mt-3" placeholder="আর্টিকেলের ডিটেইল লিখুন..." {...register("description", { required: true })} />
 
-                    {errors.description && errors.description.type === "required" && <span style={{ color: "coral" }}>আর্টিকেলের মেইন অংশ আবশ্যক</span>}
+                    {errors.description && errors.description.type === "required" && <span style={{ color: "coral" }}>আর্টিকেলের ডিটেইল আবশ্যক</span>}
 
                     {/* <input onChange={handleImageUpload} type="file" className="form-control mb-3" /> */}
                     <input type="file" className="form-control mb-3 mt-3" />
