@@ -74,8 +74,11 @@ const RegistrationForm = () => {
             },
             body: JSON.stringify(user)
             })
-            .then(res =>{
-                console.log(res)
+            .then(res => res.json())
+            .then(data =>{
+                if(data){
+                    alert("Your Registration Successfully Done!");
+                }
             })
         }catch(err){
             setError(true);
