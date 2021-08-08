@@ -3,7 +3,7 @@ import './AskQuestion.css';
 import { useForm } from 'react-hook-form';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
-
+import ReCAPTCHA from "react-google-recaptcha";
 const AskQuestion = () => {
     const {
         register,
