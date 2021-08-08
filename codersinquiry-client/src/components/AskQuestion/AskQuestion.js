@@ -51,6 +51,10 @@ const AskQuestion = () => {
                                 <input type='text' className='form-control' id='askQuestionTags' placeholder='প্রশ্ন/সমস্যার ট্যাগ যুক্ত করুন...' {...register('tags', { required: true })} />
                                 {errors.tags && <span className='text-danger'>প্রশ্ন/সমস্যার ট্যাগ যুক্ত করা আবশ্যক</span>}
                             </div>
+                            <ReCAPTCHA
+                             sitekey="Your client site key"
+                              onChange={onChange}
+                             />,
                             <button type="submit" class="btn askQuestion__btn">Post your Question</button>
                         </form>
                     </div>
