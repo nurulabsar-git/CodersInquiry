@@ -14,7 +14,9 @@ const AskQuestion = () => {
         console.log(data);
     };
 
-    const grecaptchaObject = window.grecaptcha
+    const onChange = (value) => {
+        console.log("Captcha value:", value);
+      }
 
     return (
         <div className='askQuestion'>
@@ -52,7 +54,7 @@ const AskQuestion = () => {
                                 {errors.tags && <span className='text-danger'>প্রশ্ন/সমস্যার ট্যাগ যুক্ত করা আবশ্যক</span>}
                             </div>
                             <ReCAPTCHA
-                             sitekey="Your client site key"
+                             sitekey="6Lfn5OgbAAAAAN3sZBkkUU2YCrPR6IoDgWQ5rBJL"
                               onChange={onChange}
                              />,
                             <button type="submit" class="btn askQuestion__btn">Post your Question</button>
