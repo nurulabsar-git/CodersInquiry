@@ -14,6 +14,8 @@ const AskQuestion = () => {
         console.log(data);
     };
 
+    const grecaptchaObject = window.grecaptcha
+
     return (
         <div className='askQuestion'>
             <Navbar />
