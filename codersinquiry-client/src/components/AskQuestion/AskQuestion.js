@@ -54,7 +54,7 @@ const AskQuestion = () => {
                                 {errors.tags && <span className='text-danger'>প্রশ্ন/সমস্যার ট্যাগ যুক্ত করা আবশ্যক</span>}
                             </div>
                             <ReCAPTCHA
-                             sitekey="6Lfn5OgbAAAAAN3sZBkkUU2YCrPR6IoDgWQ5rBJL"
+                             sitekey=""
                               onChange={onChange}
                              />,
                             <button type="submit" class="btn askQuestion__btn">Post your Question</button>
