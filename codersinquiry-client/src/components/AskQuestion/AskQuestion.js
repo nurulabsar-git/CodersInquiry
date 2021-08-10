@@ -22,7 +22,7 @@ const AskQuestion = () => {
         <div className='askQuestion'>
             <Navbar />
             <div className='container'>
-                <h2 className='askQuestion__head fw-bold my-3'>Ask a Question</h2>
+                <h2 className='askQuestion__head fw-bold my-3' data-testid="question">Ask a Question</h2>
                 <div className='row my-3'>
                     <div className='col-md-9 mb-3'>
                         <form onSubmit={handleSubmit(onSubmit)} className='card p-3'>

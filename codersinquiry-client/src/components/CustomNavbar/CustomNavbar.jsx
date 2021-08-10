@@ -37,6 +37,7 @@ const CustomNavbar = () => {
     return (
         <div>
             <div className='custom-navbar-container' >
+                <h1 data-testid="header">Home component</h1>
                 {' '}
                 <button onClick={openModal} style={{border: 'none'}}>
                 {/* <img src={navbar} alt="" style={{width: '70px'}}/> */}
