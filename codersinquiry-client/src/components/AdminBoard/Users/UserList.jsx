@@ -9,7 +9,7 @@ const UserList = () => {
     const lname = userList?.lastName;
     const name = `${fname} ${lname}`;
     const fetchUser = ()=>{
-        fetch(`http://localhost:5000/user`)
+        fetch(`https://fierce-hollows-24915.herokuapp.com/user`)
         .then(res => res.json())
         .then( user =>{
             setUserList(user)
