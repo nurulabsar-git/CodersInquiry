@@ -17,6 +17,8 @@ import Questions from './components/Questions/Questions';
 import QuestionDetail from './components/QuestionDetail/QuestionDetail';
 import Article from './components/Article/Article';
 import WriteArticle from './components/WriteArticle/WriteArticle';
+import AdminBoard from './components/AdminBoard/AdminBoard';
+import UserList from './components/AdminBoard/Users/UserList';
 
 const App = () => {
     return (
@@ -69,6 +71,12 @@ const App = () => {
                 <Route path='/topLearners'>
                     <Navbar />
                     <TopLearners />
+                </Route>
+                <Route path="/dashBoard">
+                    <AdminBoard />
+                </Route>
+                <Route path="/users">
+                    <UserList />
                 </Route>
             </Switch>
         </Router>
