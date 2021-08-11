@@ -41,7 +41,6 @@ const Login = () => {
         e.preventDefault()
        setError(false);
         // console.log(data);
-       
         fetch('http://localhost:5000/user')
         .then(res => res.json())
         .then( result =>{
