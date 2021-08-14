@@ -41,7 +41,7 @@ const Login = () => {
         e.preventDefault()
        setError(false);
         // console.log(data);
-        fetch('http://localhost:5000/user')
+        fetch('https://fierce-hollows-24915.herokuapp.com/user')
         .then(res => res.json())
         .then( result =>{
             const user = result.filter( user => user.email === data.email && user.password === data.password);

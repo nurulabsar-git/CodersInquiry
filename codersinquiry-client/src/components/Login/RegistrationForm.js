@@ -64,7 +64,7 @@ const RegistrationForm = () => {
             ...data
         }
         try{
-          fetch('http://localhost:5000/users',{
+          fetch('https://fierce-hollows-24915.herokuapp.com/users',{
             method:"POST",
             headers: { 
                 "Content-Type": "application/json" 
