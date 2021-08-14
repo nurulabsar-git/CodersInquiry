@@ -20,6 +20,7 @@ const WriteArticle = () => {
         console.log("Captcha value:", value);
       }
 
+      
     return (
         <div className='writeArticle'>
             <Navbar />

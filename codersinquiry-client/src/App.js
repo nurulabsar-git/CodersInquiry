@@ -12,7 +12,6 @@ import TopLearners from './components/TopLearners/TopLearners';
 import AskQuestion from './components/AskQuestion/AskQuestion';
 import CourseDetails from './components/Courses/CourseDetails';
 import Footer from './components/Footer/Footer';
-// import WriteArticle from './components/WriteArticle/WriteArticle';
 import Questions from './components/Questions/Questions';
 import QuestionDetail from './components/QuestionDetail/QuestionDetail';
 import Article from './components/Article/Article';
