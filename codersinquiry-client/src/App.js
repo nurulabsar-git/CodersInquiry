@@ -17,6 +17,8 @@ import Questions from './components/Questions/Questions';
 import QuestionDetail from './components/QuestionDetail/QuestionDetail';
 import Article from './components/Article/Article';
 import WriteArticle from './components/WriteArticle/WriteArticle';
+import Authentication from './components/Authentication/Authentication';
+import UserProfile from './components/User/UserProfile';
 
 const App = () => {
     return (
@@ -36,6 +38,14 @@ const App = () => {
                     <Login />
                     {/* <RegistrationForm /> */}
                 </Route>
+                <Route path='/register'>
+                    <Navbar />
+                    <RegistrationForm />
+                </Route>
+                <Route path='/authentication'>
+                    <Navbar />
+                    <Authentication />
+                </Route>
                 <Route path='/askQuestion'>
                     <AskQuestion />
                 </Route>
@@ -47,10 +57,6 @@ const App = () => {
                 <Route path='/writeArticle'>
                     <WriteArticle />
                     {/* <Article /> */}
-                </Route>
-                <Route path='/register'>
-                    <Navbar />
-                    <RegistrationForm />
                 </Route>
                 <Route path='/courses'>
                     <Navbar />
@@ -69,6 +75,11 @@ const App = () => {
                 <Route path='/topLearners'>
                     <Navbar />
                     <TopLearners />
+                </Route>
+                <Route path='/user/profile'>
+                    <Navbar />
+                    <UserProfile />
+                    <Footer />
                 </Route>
             </Switch>
         </Router>
