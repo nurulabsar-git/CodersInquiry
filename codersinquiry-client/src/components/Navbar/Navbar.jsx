@@ -25,13 +25,13 @@ const Navbar = () => {
                                 Tags
                             </li>
                         </Link>
-                        {/* <Link to='/courses' className='nav-item'>
+                        <Link to='/dashBoard' className='nav-item'>
                             <li className='nav-link'>
-                                Courses
+                                Dashboard
                             </li>
-                        </Link> */}
+                        </Link>
                         <Link className='nav-item'>
-                            <li to='/blogs' className='nav-link'>
+                            <li to='/' className='nav-link'>
                                 Articles
                             </li>
                         </Link>

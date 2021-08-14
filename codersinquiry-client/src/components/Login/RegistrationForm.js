@@ -70,9 +70,13 @@ const RegistrationForm = () => {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify(user),
-            }).then((res) => {
-                console.log(res);
-            });
+            })
+                .then((res) => res.json())
+                .then((data) => {
+                    if (data) {
+                        alert('Your Registration Successfully Done!');
+                    }
+                });
         } catch (err) {
             setError(true);
             console.log(error);

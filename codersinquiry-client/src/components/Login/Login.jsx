@@ -9,6 +9,7 @@ import PrimaryButton from './formComponents/PrimaryButton';
 import './Login.css';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
+import { useEffect } from 'react';
 
 const schema = yup.object().shape({
     email: yup.string().email('Email should have correct format').required('Email is a require field'),
@@ -19,6 +20,7 @@ const schema = yup.object().shape({
 });
 const Login = () => {
     const [data, setValues] = useState({});
+    const [error, setError] = useState(false);
     const history = useHistory();
     const {
         register,
@@ -32,17 +34,46 @@ const Login = () => {
         mode: 'onBlur',
         resolver: yupResolver(schema),
     });
-    const onSubmit = (data) => {
-        setValues(data);
-        history.push('/');
-        console.log(data);
-    };
+    const onSubmit =(data, e )=>{
+        e.preventDefault()
+       setError(false);
+        // console.log(data);
+        fetch('https://fierce-hollows-24915.herokuapp.com/user')
+        .then(res => res.json())
+        .then( result =>{
+            const user = result.filter( user => user.email === data.email && user.password === data.password);
+            setValues(user[0]);
+            console.log(user);
+            
+            localStorage.setItem('user', JSON.stringify(user[0]));
+            user? history.push("/") : setError(true);
+            
+        })
+    }
+   
     return (
         <MainContainer className='login_container'>
             <Typography>Login Now</Typography>
             <Form onSubmit={handleSubmit(onSubmit)}>
-                <Input {...register('email')} type='text' label='Email' name='email' error={!!errors.email} helperText={errors?.email?.message} required />
-                <Input {...register('password')} type='password' label='Password' name='password' error={!!errors.password} helperText={errors?.password?.message} required />
+            <Input 
+                    {...register("email")}
+                    type="text"
+                    label="Email" 
+                    name="email"
+                    error={!!errors.email}
+                    helperText={errors?.email?.message}
+                    required
+                />
+                {error && <p>wrong user or passer</p>}
+                <Input 
+                    {...register("password")}
+                    type="password"
+                    label="Password" 
+                    name="password"
+                    error={!!errors.password}
+                    helperText={errors?.password?.message}
+                    required
+                /> 
                 <PrimaryButton>Login</PrimaryButton>
             </Form>
             <Link to='/register'>

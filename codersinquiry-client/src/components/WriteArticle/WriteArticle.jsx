@@ -2,15 +2,23 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import Footer from '../Footer/Footer';
 import Navbar from '../Navbar/Navbar';
+// import ReCAPTCHA from "react-google-recaptcha";
+// import WriteArticleImage from '../../images/write_article1.png';
 import './WriteArticle.css';
 
 const WriteArticle = () => {
-    const { register, handleSubmit,
+    const {
+        register,
+        handleSubmit,
         formState: { errors },
     } = useForm();
     const onSubmit = (data) => {
         console.log(data);
     };
+
+    function onChange(value) {
+        console.log('Captcha value:', value);
+    }
 
     return (
         <div className='writeArticle'>

@@ -12,13 +12,14 @@ import TopLearners from './components/TopLearners/TopLearners';
 import AskQuestion from './components/AskQuestion/AskQuestion';
 import CourseDetails from './components/Courses/CourseDetails';
 import Footer from './components/Footer/Footer';
-// import WriteArticle from './components/WriteArticle/WriteArticle';
 import Questions from './components/Questions/Questions';
 import QuestionDetail from './components/QuestionDetail/QuestionDetail';
 import Article from './components/Article/Article';
 import WriteArticle from './components/WriteArticle/WriteArticle';
 import Authentication from './components/Authentication/Authentication';
 import UserProfile from './components/User/UserProfile';
+import AdminBoard from './components/AdminBoard/AdminBoard';
+import UserList from './components/AdminBoard/Users/UserList';
 
 const App = () => {
     return (
@@ -76,10 +77,11 @@ const App = () => {
                     <Navbar />
                     <TopLearners />
                 </Route>
-                <Route path='/user/profile'>
-                    <Navbar />
-                    <UserProfile />
-                    <Footer />
+                <Route path="/dashBoard">
+                    <AdminBoard />
+                </Route>
+                <Route path="/users">
+                    <UserList />
                 </Route>
             </Switch>
         </Router>
